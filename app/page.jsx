@@ -20,14 +20,13 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6">
-              Hello, <br /> I'm <span className="text-accent">Manisha</span>
-            </h1>
+            <h4 className="h4 mb-2">Hi, my name is</h4>
+            <h2 className="h2 mb-6">Manisha Goyal</h2>
+            <h3 className="h3 mb-6">
+              I'm a <span className="text-accent">Software Engineer.</span>
+            </h3>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Welcome to my digital realm, <br />
-              Where imagination meets creation!
-              <br /> With a dedicated command of software development, my portfolio illustrates my commitment to excellence.
+              With a dedicated command of software development, my portfolio illustrates my commitment to excellence.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -37,7 +36,7 @@ const Home = () => {
                   size="lg"
                   className="uppercase flex items-center gap-2"
                 >
-                  <span>Download CV</span>
+                  <span>Resume</span>
                   <FiDownload className="text-xl" />
                 </Button>
               </a>

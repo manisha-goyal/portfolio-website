@@ -17,11 +17,11 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "√",
+    description: "manisha.goyal@nyu.edu",
   },
   {
     icon: <FaMapMarkerAlt />,
-    title: "Address",
+    title: "Location",
     description: "Brooklyn, NY",
   },
 ];

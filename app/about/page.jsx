@@ -12,7 +12,6 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { motion } from "framer-motion";
 
 // components
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -26,54 +25,6 @@ const about = {
   title: "About me",
   description:
     "As a creative problem solver, I excel at turning ideas into efficient software solutions. With a collaborative spirit, I am dedicated to delivering impactful work and growing professionally.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Manisha Goyal",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+1) 929 695 7468",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "5+ Years",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "manisha.goyal@nyu.edu",
-    },
-  ],
-};
-
-// experience data
-const experience = {
-  icon: "/assets/about/badge.svg",
-  title: "My experience",
-  description:
-    "Proven expertise in software development, delivering robust solutions from conception to deployment.",
-  items: [
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-  ],
 };
 
 // education data
@@ -81,17 +32,28 @@ const education = {
   icon: "/assets/about/cap.svg",
   title: "My education",
   description:
-    "Solid academic foundation in computer science, enhanced by specialized certifications.",
+    "Solid academic foundation in computer science.",
   items: [
     {
       institution: "New York University",
       degree: "Master of Science in Computer Science",
-      duration: "2023-2025",
+      duration: "Sep 2023 - May 2025 (expected)",
+      location: "New York City, NY",
+      coursework: "Fundamental Algorithms, Operating Systems, Programming Language, Data Science, Artificial Intelligence, Databases, DevOps",
     },
     {
       institution: "Singapore Management University",
       degree: "Bachelor of Science in Information Systems Management",
-      duration: "2014 - 2018",
+      duration: "Aug 2014 - Apr 2018",
+      location: "Singapore",
+      coursework: "Software Engineering, Object Oriented Application Development, Computational Thinking, Data Mining"
+    },
+    {
+      institution: "University of Mannheim",
+      degree: "Exchange Semester, School of Business Informatics & Mathematics",
+      duration: "Aug 2017 - Dec 2017",
+      location: "Mannheim, Germany",
+      coursework: "Large-Scale Data Management, Text Analytics, German",
     },
   ],
 };
@@ -152,45 +114,12 @@ const About = () => {
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="about">About me</TabsTrigger>
-            <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
           </TabsList>
 
           {/* content */}
           <div className="w-full min-h-[25vh]">
-            {/* experience */}
-            <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experience.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {experience.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            {/* dot */}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
-
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -198,28 +127,26 @@ const About = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                <div className="relative pl-4">
+                  <div className="absolute left-0 top-0 w-1 h-full bg-accent"></div>
+                  <ul className="space-y-8">
                     {education.items.map((item, index) => {
                       return (
-                        <li
-                          key={index}
-                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            {/* dot */}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                        <li key={index} className="flex gap-4 items-start">
+                          <div className="w-4 h-4 mt-1 rounded-full bg-accent"></div>
+                          <div>
+                            <h3 className="text-xl font-semibold">{item.institution}</h3>
+                            <p className="text-white/60">{item.degree}</p>
+                            <p className="text-white/60">
+                              <span className="text-accent">Coursework:</span> {item.coursework}
+                            </p>
+                            <span className="text-accent">{item.duration} | {item.location}</span>
                           </div>
                         </li>
                       );
                     })}
                   </ul>
-                </ScrollArea>
+                </div>
               </div>
             </TabsContent>
 
@@ -260,19 +187,6 @@ const About = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
-                      >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
               </div>
             </TabsContent>
           </div>
