@@ -3,6 +3,7 @@ import "./globals.css";
 
 // components
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <PageTransition>
           <Header />
           {children}
+          <Footer />
         </PageTransition>
       </body>
     </html>
