@@ -11,6 +11,12 @@ const experiences = [
     description: [
       "Lorem Ipsum",
       "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
     ],
     logo: "/assets/experiences/thumb1.png",
   },

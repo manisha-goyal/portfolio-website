@@ -6,7 +6,8 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  FaFigma,
+  FaPython,
+  FaJava,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import React, { useState } from "react";
@@ -53,45 +54,59 @@ const aboutTabs = [
     title: "Skills",
     description:
       "Adept in the React Ecosystem with proficiency in UI/UX collaboration using Figma.",
-    skillList: [
+    skillCategories: [
       {
-        icon: <FaHtml5 />,
-        name: "html 5",
+        category: "Frontend Development",
+        skills: [
+          {
+            icon: <FaHtml5 />,
+            name: "html 5",
+          },
+          {
+            icon: <FaCss3 />,
+            name: "css 3",
+          },
+          {
+            icon: <FaJs />,
+            name: "javascript",
+          },
+          {
+            icon: <FaReact />,
+            name: "react.js",
+          },
+          {
+            icon: <SiNextdotjs />,
+            name: "next.js",
+          },
+          {
+            icon: <SiTailwindcss />,
+            name: "tailwind.css",
+          },
+        ],
       },
       {
-        icon: <FaCss3 />,
-        name: "css 3",
-      },
-      {
-        icon: <FaJs />,
-        name: "javascript",
-      },
-      {
-        icon: <FaReact />,
-        name: "react.js",
-      },
-      {
-        icon: <SiNextdotjs />,
-        name: "next.js",
-      },
-      {
-        icon: <SiTailwindcss />,
-        name: "tailwind.css",
-      },
-      {
-        icon: <FaNodeJs />,
-        name: "node.js",
-      },
-      {
-        icon: <FaFigma />,
-        name: "figma",
+        category: "Backend Development",
+        skills: [
+          {
+            icon: <FaNodeJs />,
+            name: "node.js",
+          },
+          {
+            icon: <FaJava />,
+            name: "Java",
+          },
+          {
+            icon: <FaPython />,
+            name: "Python",
+          },
+        ],
       },
     ],
   },
 ];
 
 const About = () => {
-  const [selectedAbout, setSelectedAbout] = useState(0); // Default to "My education"
+  const [selectedAbout, setSelectedAbout] = useState(0); // Default to "Education"
 
   const renderContent = () => {
     if (aboutTabs[selectedAbout].items) {
@@ -114,16 +129,28 @@ const About = () => {
           ))}
         </ul>
       );
-    } else if (aboutTabs[selectedAbout].skillList) {
+    } else if (aboutTabs[selectedAbout].skillCategories) {
       return (
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-          {aboutTabs[selectedAbout].skillList.map((skill, index) => (
-            <li key={index} className="flex flex-col items-center">
-              <div className="text-6xl text-accent mb-2">{skill.icon}</div>
-              <p className="text-white/60">{skill.name}</p>
-            </li>
+        <div className="space-y-8">
+          {aboutTabs[selectedAbout].skillCategories.map((category, index) => (
+            <div key={index}>
+              <div className="flex items-start space-x-2 mb-4">
+                <span className="text-accent">▹</span>
+                <h3 className="text-2xl font-semibold text-white">
+                  {category.category}
+                </h3>
+              </div>
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                {category.skills.map((skill, skillIndex) => (
+                  <li key={skillIndex} className="flex flex-col items-center">
+                    <div className="text-6xl text-accent mb-2">{skill.icon}</div>
+                    <p className="text-white/60">{skill.name}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       );
     } else {
       return <p className="text-white">{aboutTabs[selectedAbout].description}</p>;
@@ -132,7 +159,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-start justify-start py-12 xl:py-0 bg-dark-gray">
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-16">
         {/* About */}
         <div className="mb-16 flex flex-col items-center text-center">
           <h3 className="text-4xl font-bold">{about.title}</h3>
