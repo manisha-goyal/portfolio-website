@@ -120,11 +120,9 @@ const About = () => {
                   {item.institution}
                 </h2>
               </div>
-              <p className="text-white/90">{item.degree}</p>
-              <p className="text-white/70">
-                <span className="text-accent">Coursework:</span> {item.coursework}
-              </p>
-              <span className="text-accent">{item.duration} | {item.location}</span>
+              <p className="text-accent">{item.degree}</p>
+              <p className="text-white/80">{"Coursework: "}{item.coursework}</p>
+              <span className="text-white/70">{item.duration} | {item.location}</span>
             </li>
           ))}
         </ul>
