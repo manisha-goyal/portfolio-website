@@ -1,20 +1,16 @@
 # Manisha Goyal - Developer Portfolio
 
 This repository contains the code of my personal portfolio website showcasing projects, skills, and expertise as a software engineer.
-The README.md file provides an overview of the project and instructions on how to set it up and customize it for your own use.
+
+![Demo](public/assets/demo.png)
 
 ## Features
 
 - Responsive Design: The site adapts to various screen sizes and devices, providing a great user experience on both desktop and mobile.
-- About Section: Displays areas of expertise, education and technical skills with relevant descriptions and icons.
-- Project Showcase: Highlights selected projects with descriptions and links to their repositories.
-- Contact Section: Allows visitors to send messages to collaborate.
 
 ## Deployment
 
-The portfolio is live and accessible at .
-
-You can view and manage the deployment settings on Vercel Dashboard.
+The portfolio is live and accessible at [manishagoyal.vercel.app](https://manishagoyal.vercel.app/).
 
 ## Contributing
 
