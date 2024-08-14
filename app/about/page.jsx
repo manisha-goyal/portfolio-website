@@ -126,7 +126,7 @@ const aboutTabs = [
         skills: [
           { icon: <DiScrum />, name: "agile/scrum" },
           { icon: <SiAzuredevops />, name: "devOps" },
-          { icon: <LuBrainCircuit />, name: "design thinking" },
+          { icon: <LuBrainCircuit />, name: "design-thinking" },
           { icon: <SiJirasoftware />, name: "jira" },
         ],
       },
@@ -156,10 +156,10 @@ const About = () => {
       return (
         <ul className="space-y-8 text-white">
           {aboutTabs[selectedAbout].items.map((item, index) => (
-            <li key={index} className="flex flex-col">
+            <li key={index} className="flex flex-col bg-secondary p-4 rounded-lg">
               <div className="flex items-start space-x-2">
                 <span className="text-accent">▹</span>
-                <h2 className="text-2xl font-bold text-white mb-2">
+                <h2 className="text-2xl font-bold text-white mb-2 text-white/90">
                   {item.institution}
                 </h2>
               </div>
@@ -177,15 +177,15 @@ const About = () => {
             <div key={index}>
               <div className="flex items-start space-x-2 mb-4">
                 <span className="text-accent">▹</span>
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-white text-white/90">
                   {category.category}
                 </h3>
               </div>
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 xl:gap-[30px]">
-              {category.skills.map((skill, skillIndex) => (
-                  <li key={skillIndex} className="flex flex-col items-center">
+                {category.skills.map((skill, skillIndex) => (
+                  <li key={skillIndex} className="flex flex-col items-center justify-center text-center p-4 bg-secondary rounded-lg">
                     <div className="text-4xl text-accent mb-2">{skill.icon}</div>
-                    <p className="text-white/60  text-center">{skill.name}</p>
+                    <p className="text-white/60">{skill.name}</p>
                   </li>
                 ))}
               </ul>
@@ -208,7 +208,7 @@ const About = () => {
       <div className="container mx-auto pb-16">
         {/* About */}
         <div className="mb-16 flex flex-col items-center text-center">
-          <h3 className="text-4xl font-bold">{about.title}</h3>
+          <h3 className="text-4xl font-bold text-white/90">{about.title}</h3>
           <p className="max-w-[600px] text-white/60 mt-4">
             {about.description}
           </p>

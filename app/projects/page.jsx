@@ -70,7 +70,7 @@ const Projects = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-2 flex-1">
-                <h2 className="text-xl sm:text-2xl font-bold text-white">
+                <h2 className="text-xl sm:text-2xl font-bold text-white text-white/90">
                   {project.title}
                 </h2>
                 <p className="text-white/80 flex-1">{project.description}</p>

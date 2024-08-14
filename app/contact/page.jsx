@@ -38,7 +38,7 @@ const Contact = () => {
           <div className="w-full xl:w-[54%] order-2 xl:order-none">
             <div className="flex flex-col gap-6 p-6 sm:p-10 bg-secondary rounded-xl">
               <h3 className="text-3xl sm:text-4xl text-accent">Let's connect!</h3>
-              <p className="text-white/60">
+              <p className="text-white/80">
                 Reach out to discuss opportunities, projects, or simply to start
                 a conversation.
               </p>
@@ -66,8 +66,8 @@ const Contact = () => {
                       <div className="text-[24px] sm:text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-white/60 text-sm sm:text-base">{item.title}</p>
-                      <h3 className="text-lg sm:text-xl">{item.description}</h3>
+                      <p className="text-white/70 text-sm sm:text-base">{item.title}</p>
+                      <h3 className="text-lg sm:text-xlinfo text-white/90">{item.description}</h3>
                     </div>
                   </li>
                 );

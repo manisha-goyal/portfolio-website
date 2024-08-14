@@ -20,12 +20,12 @@ const Home = () => {
         <div className="flex flex-col-reverse xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 gap-8 xl:gap-0">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none w-full">
-            <h4 className="h4 mb-2 text-2xl sm:text-3xl">Hi, my name is</h4>
-            <h2 className="h2 mb-6 text-4xl sm:text-5xl">Manisha Goyal</h2>
-            <h3 className="h3 mb-6 text-2xl sm:text-3xl">
-              I'm a <span className="text-accent">Software Engineer.</span>
+            <h4 className="h4 mb-2 text-white/70">Hi, my name is</h4>
+            <h2 className="h2 mb-6 text-white/90">Manisha Goyal</h2>
+            <h3 className="h3 mb-6 text-white/80">
+              I'm a <span className="text-accent">Software Engineer</span>
             </h3>
-            <p className="max-w-[500px] mb-9 text-white/80 mx-auto xl:mx-0">
+            <p className="max-w-[500px] mb-9 text-white/70 mx-auto xl:mx-0">
               With a dedicated command of software development, my portfolio illustrates my commitment to excellence.
             </p>
             {/* btn and socials */}
