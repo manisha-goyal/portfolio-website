@@ -1,6 +1,6 @@
 "use client";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 // components
@@ -8,11 +8,6 @@ import { Button } from "@/components/ui/button";
 import Social from "@/components/Social";
 
 const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+1) 929 695 7468",
-  },
   {
     icon: <FaEnvelope />,
     title: "Email",
