@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const experiences = [
@@ -75,7 +76,11 @@ const Experiences = () => {
   const [selectedExperience, setSelectedExperience] = useState(0);
 
   return (
-    <div className="min-h-[80vh] flex items-start justify-center py-12 xl:py-10 bg-dark-gray">
+    <motion.div
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+      className="min-h-[80vh] flex items-start justify-center py-12 xl:py-10 bg-dark-gray">
       <div className="container mx-auto flex flex-col xl:flex-row">
         {/* Left Sidebar */}
         <div className="flex flex-col xl:w-[35%] p-4 border-r border-accent">
@@ -122,7 +127,7 @@ const Experiences = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

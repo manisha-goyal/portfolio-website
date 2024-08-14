@@ -1,5 +1,9 @@
 "use client";
 
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+
+// Import all the icons
 import {
   FaHtml5,
   FaCss3,
@@ -48,7 +52,6 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineRadarChart, AiFillApi } from "react-icons/ai";
 import { DiScrum } from "react-icons/di";
 import { LuBrainCircuit } from "react-icons/lu";
-import React, { useState } from "react";
 
 const about = {
   title: "About me",
@@ -96,216 +99,81 @@ const aboutTabs = [
       {
         category: "Languages",
         skills: [
-          {
-            icon: <FaJava />,
-            name: "java",
-          },
-          {
-            icon: <FaPython />,
-            name: "python",
-          },
-          {
-            icon: <SiCplusplus />,
-            name: "C++",
-          },
-          {
-            icon: <SiC />,
-            name: "C",
-          },
-          {
-            icon: <SiScala />,
-            name: "scala",
-          },
-          {
-            icon: <SiSolidity />,
-            name: "solidity",
-          },
-          {
-            icon: <FaNodeJs />,
-            name: "node.js",
-          },
-          {
-            icon: <BsFiletypeSql />,
-            name: "sql",
-          },
-          {
-            icon: <FaHtml5 />,
-            name: "html 5",
-          },
-          {
-            icon: <FaCss3 />,
-            name: "css 3",
-          },
-          {
-            icon: <FaJs />,
-            name: "javascript",
-          },
+          { icon: <FaJava />, name: "java" },
+          { icon: <FaPython />, name: "python" },
+          { icon: <SiCplusplus />, name: "C++" },
+          { icon: <SiC />, name: "C" },
+          { icon: <SiScala />, name: "scala" },
+          { icon: <SiSolidity />, name: "solidity" },
+          { icon: <FaNodeJs />, name: "node.js" },
+          { icon: <BsFiletypeSql />, name: "sql" },
+          { icon: <FaHtml5 />, name: "html 5" },
+          { icon: <FaCss3 />, name: "css 3" },
+          { icon: <FaJs />, name: "javascript" },
         ],
       },
       {
         category: "Frameworks and Libraries",
         skills: [
-          {
-            icon: <SiSpringboot />,
-            name: "sprintboot",
-          },
-          {
-            icon: <SiFlask />,
-            name: "flask",
-          },
-          {
-            icon: <FaReact />,
-            name: "react.js",
-          },
-          {
-            icon: <SiPandas />,
-            name: "pandas",
-          },
-          {
-            icon: <SiJunit5 />,
-            name: "jUnit",
-          },
-          {
-            icon: <SiPytest />,
-            name: "pytest",
-          },
-          {
-            icon: <SiCucumber />,
-            name: "cucumber",
-          },
-          {
-            icon: <SiWeb3Dotjs />,
-            name: "web3.js",
-          },
+          { icon: <SiSpringboot />, name: "sprintboot" },
+          { icon: <SiFlask />, name: "flask" },
+          { icon: <FaReact />, name: "react.js" },
+          { icon: <SiPandas />, name: "pandas" },
+          { icon: <SiJunit5 />, name: "jUnit" },
+          { icon: <SiPytest />, name: "pytest" },
+          { icon: <SiCucumber />, name: "cucumber" },
+          { icon: <SiWeb3Dotjs />, name: "web3.js" },
         ],
       },
       {
         category: "Machine Learning",
         skills: [
-          {
-            icon: <SiScikitlearn />,
-            name: "scikit-learn",
-          },
-          {
-            icon: <SiNumpy />,
-            name: "numpy",
-          },
-          {
-            icon: <AiOutlineRadarChart />,
-            name: "matPlotLib",
-          },
+          { icon: <SiScikitlearn />, name: "scikit-learn" },
+          { icon: <SiNumpy />, name: "numpy" },
+          { icon: <AiOutlineRadarChart />, name: "matPlotLib" },
         ],
       },
       {
         category: "Cloud and DevOps",
         skills: [
-          {
-            icon: <SiDocker />,
-            name: "docker",
-          },
-          {
-            icon: <SiKubernetes />,
-            name: "kubernetes",
-          },
-          {
-            icon: <SiGooglecloud />,
-            name: "gcp",
-          },
-          {
-            icon: <SiAmazon />,
-            name: "aws",
-          },
-          {
-            icon: <SiRedhatopenshift />,
-            name: "redhat openshift",
-          },
-          {
-            icon: <FaJenkins />,
-            name: "jenkins",
-          },
-          {
-            icon: <FaGitAlt />,
-            name: "git",
-          },
-          {
-            icon: <FaGithub />,
-            name: "github",
-          },
+          { icon: <SiDocker />, name: "docker" },
+          { icon: <SiKubernetes />, name: "kubernetes" },
+          { icon: <SiGooglecloud />, name: "gcp" },
+          { icon: <SiAmazon />, name: "aws" },
+          { icon: <SiRedhatopenshift />, name: "redhat openshift" },
+          { icon: <FaJenkins />, name: "jenkins" },
+          { icon: <FaGitAlt />, name: "git" },
+          { icon: <FaGithub />, name: "github" },
         ],
       },
       {
         category: "Databases",
         skills: [
-          {
-            icon: <SiMysql />,
-            name: "mySql",
-          },
-          {
-            icon: <BiLogoPostgresql />,
-            name: "postgresql",
-          },
+          { icon: <SiMysql />, name: "mySql" },
+          { icon: <BiLogoPostgresql />, name: "postgresql" },
         ],
       },
       {
         category: "SDLC and Practices",
         skills: [
-          {
-            icon: <DiScrum />,
-            name: "agile/scrum",
-          },
-          {
-            icon: <SiAzuredevops />,
-            name: "devOps",
-          },
-          {
-            icon: <LuBrainCircuit />,
-            name: "design thinking",
-          },
-          {
-            icon: <SiJirasoftware />,
-            name: "jira",
-          },
+          { icon: <DiScrum />, name: "agile/scrum" },
+          { icon: <SiAzuredevops />, name: "devOps" },
+          { icon: <LuBrainCircuit />, name: "design thinking" },
+          { icon: <SiJirasoftware />, name: "jira" },
         ],
       },
       {
         category: "Tools and Others",
         skills: [
-          {
-            icon: <FaLinux />,
-            name: "linux",
-          },
-          {
-            icon: <AiFillApi />,
-            name: "rest apis",
-          },
-          {
-            icon: <SiSwagger />,
-            name: "swagger",
-          },
-          {
-            icon: <SiApachehadoop />,
-            name: "hadoop",
-          },
-          {
-            icon: <SiApachekafka />,
-            name: "kafka",
-          },
-          {
-            icon: <SiApachespark />,
-            name: "spark",
-          },
-          {
-            icon: <FaEthereum />,
-            name: "ethereum",
-          },
-          {
-            icon: <SiBlockchaindotcom />,
-            name: "quorum",
-          },
-          {
-            icon: <SiTableau />,
-            name: "tableau",
-          },
+          { icon: <FaLinux />, name: "linux" },
+          { icon: <AiFillApi />, name: "rest apis" },
+          { icon: <SiSwagger />, name: "swagger" },
+          { icon: <SiApachehadoop />, name: "hadoop" },
+          { icon: <SiApachekafka />, name: "kafka" },
+          { icon: <SiApachespark />, name: "spark" },
+          { icon: <FaEthereum />, name: "ethereum" },
+          { icon: <SiBlockchaindotcom />, name: "quorum" },
+          { icon: <SiTableau />, name: "tableau" },
         ],
       },
     ],
@@ -363,7 +231,12 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-start justify-start py-12 xl:py-0 bg-dark-gray">
+    <motion.div
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+      className="min-h-screen flex flex-col items-start justify-start py-12 xl:py-0 bg-dark-gray"
+    >
       <div className="container mx-auto pb-16">
         {/* About */}
         <div className="mb-16 flex flex-col items-center text-center">
@@ -396,7 +269,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
