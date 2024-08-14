@@ -30,22 +30,22 @@ const Contact = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 sm:py-6 bg-dark-gray"
     >
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-[30px]">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex flex-col gap-[20px] sm:gap-[30px] xl:flex-row">
           {/* Get in Touch Button */}
-          <div className="xl:w-[54%] order-2 xl:order-none">
-            <div className="flex flex-col gap-6 p-10 bg-secondary rounded-xl">
-              <h3 className="text-4xl text-accent">Let's connect!</h3>
+          <div className="w-full xl:w-[54%] order-2 xl:order-none">
+            <div className="flex flex-col gap-6 p-6 sm:p-10 bg-secondary rounded-xl">
+              <h3 className="text-3xl sm:text-4xl text-accent">Let's connect!</h3>
               <p className="text-white/60">
                 Reach out to discuss opportunities, projects, or simply to start
                 a conversation.
               </p>
               {/* Flex container for button and social icons */}
-              <div className="flex items-center gap-6">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 {/* Get in Touch Button */}
-                <Button size="md" className="max-w-40" onClick={handleGetInTouchClick}>
+                <Button size="md" className="max-w-[180px]" onClick={handleGetInTouchClick}>
                   Get in Touch
                 </Button>
                 {/* Social Media Icons */}
@@ -58,16 +58,16 @@ const Contact = () => {
           </div>
           {/* info */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
-            <ul className="flex flex-col gap-10">
+            <ul className="flex flex-col gap-8 sm:gap-10">
               {info.map((item, index) => {
                 return (
-                  <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
+                  <li key={index} className="flex items-center gap-4 sm:gap-6">
+                    <div className="w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
+                      <div className="text-[24px] sm:text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-white/60">{item.title}</p>
-                      <h3 className="text-lg xl:text-xl">{item.description}</h3>
+                      <p className="text-white/60 text-sm sm:text-base">{item.title}</p>
+                      <h3 className="text-lg sm:text-xl">{item.description}</h3>
                     </div>
                   </li>
                 );

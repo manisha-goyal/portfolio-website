@@ -106,11 +106,11 @@ const Experiences = () => {
         </div>
 
         {/* Right Content Area */}
-        <div className="flex flex-col xl:w-[65%] pl-8">
+        <div className="flex flex-col xl:w-[65%] pl-8 mt-8 xl:mt-0">
           <h2 className="text-2xl font-bold text-white mb-2">
             {experiences[selectedExperience].position}{" "}
             <span className="text-accent">
-             {" @ "}{experiences[selectedExperience].company}
+              {" @ "}{experiences[selectedExperience].company}
             </span>
           </h2>
           <p className="text-white/70 mb-4">
