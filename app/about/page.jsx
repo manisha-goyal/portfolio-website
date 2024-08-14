@@ -345,11 +345,11 @@ const About = () => {
                   {category.category}
                 </h3>
               </div>
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                {category.skills.map((skill, skillIndex) => (
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 xl:gap-[30px]">
+              {category.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex flex-col items-center">
                     <div className="text-4xl text-accent mb-2">{skill.icon}</div>
-                    <p className="text-white/60">{skill.name}</p>
+                    <p className="text-white/60  text-center">{skill.name}</p>
                   </li>
                 ))}
               </ul>
