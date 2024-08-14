@@ -1,8 +1,9 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const socials = [
   { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/goyalmanisha/" },
   { icon: <FaGithub />, path: "https://github.com/manisha-goyal" },
+  { icon: <FaEnvelope />, path: "mailto:manisha.goyal@nyu.edu" }, // Email icon
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
@@ -13,8 +14,8 @@ const Social = ({ containerStyles, iconStyles }) => {
           key={index}
           href={item.path}
           className={iconStyles}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={item.path.startsWith("mailto:") ? "_self" : "_blank"}
+          rel={item.path.startsWith("mailto:") ? "" : "noopener noreferrer"}
         >
           {item.icon}
         </a>

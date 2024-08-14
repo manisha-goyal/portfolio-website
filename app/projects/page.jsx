@@ -47,16 +47,16 @@ const Projects = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 sm:py-6 bg-dark-gray"
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
               className="flex flex-col gap-4 bg-secondary p-4 rounded-lg"
             >
-              <div className="relative w-full h-[200px] bg-pink-50/20">
+              <div className="relative w-full h-[180px] sm:h-[200px] bg-pink-50/20">
                 {/* overlay */}
                 <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                 {/* image */}
@@ -65,12 +65,12 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-lg"
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-4 flex-1">
-                <h2 className="text-2xl font-bold text-white">
+              <div className="flex flex-col gap-2 flex-1">
+                <h2 className="text-xl sm:text-2xl font-bold text-white text-white/90">
                   {project.title}
                 </h2>
                 <p className="text-white/80 flex-1">{project.description}</p>
