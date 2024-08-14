@@ -76,7 +76,7 @@ const Projects = () => {
                 <p className="text-white/80 flex-1">{project.description}</p>
                 <div className="border border-white/20"></div>
                 <p className="text-white/70">{project.technologies}</p>
-                <div className="flex justify-end mt-4">
+                <div className="flex justify-end">
                   <Link href={project.github}>
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>

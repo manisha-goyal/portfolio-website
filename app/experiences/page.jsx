@@ -96,7 +96,6 @@ const Experiences = () => {
             >
               <Image
                 src={experience.logo}
-                alt={experience.company}
                 width={40}
                 height={40}
                 className="rounded-md"
