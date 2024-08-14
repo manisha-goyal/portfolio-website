@@ -8,8 +8,46 @@ import {
   FaNodeJs,
   FaPython,
   FaJava,
+  FaLinux,
+  FaEthereum,
+  FaGitAlt,
+  FaGithub,
+  FaJenkins,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiCplusplus,
+  SiC,
+  SiScala,
+  SiSolidity,
+  SiJunit5,
+  SiFlask,
+  SiPytest,
+  SiSpringboot,
+  SiCucumber,
+  SiWeb3Dotjs,
+  SiScikitlearn,
+  SiNumpy,
+  SiPandas,
+  SiDocker,
+  SiKubernetes,
+  SiGooglecloud,
+  SiAmazon,
+  SiRedhatopenshift,
+  SiAzuredevops,
+  SiMysql,
+  SiSwagger,
+  SiApachehadoop,
+  SiApachekafka,
+  SiApachespark,
+  SiBlockchaindotcom,
+  SiTableau,
+  SiJirasoftware,
+} from "react-icons/si";
+import { BsFiletypeSql } from "react-icons/bs";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { AiOutlineRadarChart, AiFillApi } from "react-icons/ai";
+import { DiScrum } from "react-icons/di";
+import { LuBrainCircuit } from "react-icons/lu";
 import React, { useState } from "react";
 
 const about = {
@@ -56,8 +94,40 @@ const aboutTabs = [
       "Adept in the React Ecosystem with proficiency in UI/UX collaboration using Figma.",
     skillCategories: [
       {
-        category: "Frontend Development",
+        category: "Languages",
         skills: [
+          {
+            icon: <FaJava />,
+            name: "java",
+          },
+          {
+            icon: <FaPython />,
+            name: "python",
+          },
+          {
+            icon: <SiCplusplus />,
+            name: "C++",
+          },
+          {
+            icon: <SiC />,
+            name: "C",
+          },
+          {
+            icon: <SiScala />,
+            name: "scala",
+          },
+          {
+            icon: <SiSolidity />,
+            name: "solidity",
+          },
+          {
+            icon: <FaNodeJs />,
+            name: "node.js",
+          },
+          {
+            icon: <BsFiletypeSql />,
+            name: "sql",
+          },
           {
             icon: <FaHtml5 />,
             name: "html 5",
@@ -70,34 +140,171 @@ const aboutTabs = [
             icon: <FaJs />,
             name: "javascript",
           },
+        ],
+      },
+      {
+        category: "Frameworks and Libraries",
+        skills: [
+          {
+            icon: <SiSpringboot />,
+            name: "sprintboot",
+          },
+          {
+            icon: <SiFlask />,
+            name: "flask",
+          },
           {
             icon: <FaReact />,
             name: "react.js",
           },
           {
-            icon: <SiNextdotjs />,
-            name: "next.js",
+            icon: <SiPandas />,
+            name: "pandas",
           },
           {
-            icon: <SiTailwindcss />,
-            name: "tailwind.css",
+            icon: <SiJunit5 />,
+            name: "jUnit",
+          },
+          {
+            icon: <SiPytest />,
+            name: "pytest",
+          },
+          {
+            icon: <SiCucumber />,
+            name: "cucumber",
+          },
+          {
+            icon: <SiWeb3Dotjs />,
+            name: "web3.js",
           },
         ],
       },
       {
-        category: "Backend Development",
+        category: "Machine Learning",
         skills: [
           {
-            icon: <FaNodeJs />,
-            name: "node.js",
+            icon: <SiScikitlearn />,
+            name: "scikit-learn",
           },
           {
-            icon: <FaJava />,
-            name: "Java",
+            icon: <SiNumpy />,
+            name: "numpy",
           },
           {
-            icon: <FaPython />,
-            name: "Python",
+            icon: <AiOutlineRadarChart />,
+            name: "matPlotLib",
+          },
+        ],
+      },
+      {
+        category: "Cloud and DevOps",
+        skills: [
+          {
+            icon: <SiDocker />,
+            name: "docker",
+          },
+          {
+            icon: <SiKubernetes />,
+            name: "kubernetes",
+          },
+          {
+            icon: <SiGooglecloud />,
+            name: "gcp",
+          },
+          {
+            icon: <SiAmazon />,
+            name: "aws",
+          },
+          {
+            icon: <SiRedhatopenshift />,
+            name: "redhat openshift",
+          },
+          {
+            icon: <FaJenkins />,
+            name: "jenkins",
+          },
+          {
+            icon: <FaGitAlt />,
+            name: "git",
+          },
+          {
+            icon: <FaGithub />,
+            name: "github",
+          },
+        ],
+      },
+      {
+        category: "Databases",
+        skills: [
+          {
+            icon: <SiMysql />,
+            name: "mySql",
+          },
+          {
+            icon: <BiLogoPostgresql />,
+            name: "postgresql",
+          },
+        ],
+      },
+      {
+        category: "SDLC and Practices",
+        skills: [
+          {
+            icon: <DiScrum />,
+            name: "agile/scrum",
+          },
+          {
+            icon: <SiAzuredevops />,
+            name: "devOps",
+          },
+          {
+            icon: <LuBrainCircuit />,
+            name: "design thinking",
+          },
+          {
+            icon: <SiJirasoftware />,
+            name: "jira",
+          },
+        ],
+      },
+      {
+        category: "Tools and Others",
+        skills: [
+          {
+            icon: <FaLinux />,
+            name: "linux",
+          },
+          {
+            icon: <AiFillApi />,
+            name: "rest apis",
+          },
+          {
+            icon: <SiSwagger />,
+            name: "swagger",
+          },
+          {
+            icon: <SiApachehadoop />,
+            name: "hadoop",
+          },
+          {
+            icon: <SiApachekafka />,
+            name: "kafka",
+          },
+          {
+            icon: <SiApachespark />,
+            name: "spark",
+          },
+          {
+            icon: <FaEthereum />,
+            name: "ethereum",
+          },
+          {
+            icon: <SiBlockchaindotcom />,
+            name: "quorum",
+          },
+          {
+            icon: <SiTableau />,
+            name: "tableau",
           },
         ],
       },
@@ -141,7 +348,7 @@ const About = () => {
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                 {category.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex flex-col items-center">
-                    <div className="text-6xl text-accent mb-2">{skill.icon}</div>
+                    <div className="text-4xl text-accent mb-2">{skill.icon}</div>
                     <p className="text-white/60">{skill.name}</p>
                   </li>
                 ))}
@@ -168,15 +375,14 @@ const About = () => {
 
         <div className="flex flex-col xl:flex-row">
           {/* Left Sidebar */}
-          <div className="flex flex-col xl:w-[25%] p-4 border-r border-accent">
+          <div className="flex flex-col xl:w-[20%] p-4 border-r border-accent">
             {aboutTabs.map((aboutTab, index) => (
               <button
                 key={index}
-                className={`text-left p-4 cursor-pointer transition-all duration-300 flex items-center gap-4 rounded-lg ${
-                  index === selectedAbout
-                    ? "text-accent bg-accent bg-opacity-20"
-                    : "text-gray-400 bg-dark-gray"
-                }`}
+                className={`text-left p-4 cursor-pointer transition-all duration-300 flex items-center gap-4 rounded-lg ${index === selectedAbout
+                  ? "text-accent bg-accent bg-opacity-20"
+                  : "text-gray-400 bg-dark-gray"
+                  }`}
                 onClick={() => setSelectedAbout(index)}
               >
                 <span className="text-lg font-semibold">{aboutTab.title}</span>
@@ -185,7 +391,7 @@ const About = () => {
           </div>
 
           {/* Right Content Area */}
-          <div className="flex flex-col xl:w-[75%] pl-8">
+          <div className="flex flex-col xl:w-[80%] pl-8">
             {renderContent()}
           </div>
         </div>
