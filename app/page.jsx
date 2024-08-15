@@ -17,17 +17,18 @@ const Home = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 sm:py-6 bg-dark-gray"
     >
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex flex-col-reverse xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 gap-8 xl:gap-0">
+        <div className="flex flex-col xl:flex-row items-center justify-center gap-8 xl:gap-4">
+          {/* photo */}
+          <div className="w-full xl:w-[40%] flex justify-center">
+            <Photo />
+          </div>
           {/* text */}
-          <div className="text-center xl:text-left order-2 xl:order-none w-full">
+          <div className="text-center xl:text-left w-full xl:w-[50%]">
             <h4 className="h4 mb-2 text-white/70">Hi, my name is</h4>
-            <h2 className="h2 mb-6 text-white/90">Manisha Goyal</h2>
-            <h3 className="h3 mb-6 text-white/80">
-              I'm a <span className="text-accent">Software Engineer</span>
+            <h2 className="h2 mb-6 text-white/90">Manisha Goyal.</h2>
+            <h3 className="h3 mb-6 text-white/80 mb-12">
+              I'm a <span className="text-accent">Software Engineer.</span>
             </h3>
-            <p className="max-w-[500px] mb-9 text-white/70 mx-auto xl:mx-0">
-              With a dedicated command of software development, my portfolio illustrates my commitment to excellence.
-            </p>
             {/* btn and socials */}
             <div className="flex flex-col sm:flex-row items-center gap-8">
               <a href="/assets/Manisha_Goyal_Resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -47,10 +48,6 @@ const Home = () => {
                 />
               </div>
             </div>
-          </div>
-          {/* photo */}
-          <div className="order-1 xl:order-none w-full xl:w-auto mb-8 xl:mb-0">
-            <Photo />
           </div>
         </div>
       </div>

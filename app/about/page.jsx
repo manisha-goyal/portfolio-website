@@ -23,8 +23,11 @@ import { LuBrainCircuit } from "react-icons/lu";
 
 const about = {
   title: "About me",
-  description:
-    "As a creative problem solver, I excel at turning ideas into efficient software solutions. With a collaborative spirit, I am dedicated to delivering impactful work and growing professionally.",
+  description: [
+    "I'm a software engineer with a deep passion for creating innovative and scalable solutions. Currently, I'm pursuing a Master's in Computer Science at New York University, where I'm delving into cutting-edge topics like Artificial Intelligence and Machine Learning.",
+    "My journey has taken me from developing decentralized applications at J.P. Morgan to building scalable data lakes for cybersecurity. Now, I'm excited to explore new opportunities where I can combine my technical expertise with my love for innovation.",
+    "When I'm not coding, you'll find me experimenting with new recipes, practicing yoga, or binge-watching the latest TV shows and movies."
+  ],
 };
 
 const aboutTabs = [
@@ -207,11 +210,18 @@ const About = () => {
     >
       <div className="container mx-auto pb-16">
         {/* About */}
-        <div className="mb-16 flex flex-col items-center text-center">
+        <div className="mb-16 flex flex-col items-start xl:items-center text-left xl:text-center">
           <h3 className="text-4xl font-bold text-white/90">{about.title}</h3>
-          <p className="max-w-[600px] text-white/60 mt-4">
-            {about.description}
-          </p>
+          <div className="bg-secondary p-4 mt-4 rounded-lg text-justify">
+            {about.description.map((paragraph, index) => (
+              <p
+                key={index}
+                className={`max-w-[850px] text-white/60 text-justify ${index === 0 ? 'mt-0' : 'mt-4'}`}
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col xl:flex-row">
