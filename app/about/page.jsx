@@ -24,7 +24,7 @@ import { LuBrainCircuit } from "react-icons/lu";
 const about = {
   title: "About me",
   description: [
-    "I'm a software engineer with a deep passion for creating innovative and scalable solutions. Currently, I'm pursuing a Master's in Computer Science at New York University, where I'm delving into cutting-edge topics like Artificial Intelligence and Machine Learning.",
+    "I'm a software engineer with a deep passion for creating innovative and scalable solutions. Currently, I'm pursuing a Master's in Computer Science at New York University (Courant Institute of Mathematical Sciences), where I'm delving into cutting-edge topics like Artificial Intelligence and Machine Learning.",
     "My journey has taken me from developing decentralized applications at J.P. Morgan to building scalable data lakes for cybersecurity. Now, I'm excited to explore new opportunities where I can combine my technical expertise with my love for innovation.",
     "When I'm not coding, you'll find me experimenting with new recipes, practicing yoga, or binge-watching the latest TV shows and movies."
   ],
