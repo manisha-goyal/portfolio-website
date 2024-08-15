@@ -19,7 +19,7 @@ const projects = [
     title: "Bookstore Database & Recommendation System",
     description:
       "An advanced bookstore database system integrating Machine Learning algorithms for inventory management and personalized recommendations",
-    technologies: "Html 5, CSS 3, Javascript",
+    technologies: "ML",
     image: "/assets/projects/bookstore.png",
     github: "",
   },
@@ -27,7 +27,7 @@ const projects = [
     title: "Shell Implementation",
     description:
       "A simplified UNIX shell in C, incorporating features like basic command execution, input/output redirection, pipe-based inter-process communication, and job control for process management",
-    technologies: "Html 5, Tailwind CSS, Javascript",
+    technologies: "C, Unix, Shell Scripting, Operating Systems",
     image: "/assets/projects/linux.png",
     github: "",
   },
@@ -35,7 +35,7 @@ const projects = [
     title: "Analysis of Library Training Effectiveness",
     description:
       "Research on effectiveness of SMU Library's training efforts on students' research skills through statistical and text analysis on survey data from 1000 students",
-    technologies: "Html 5, CSS 3, Javascript",
+    technologies: "Data analysis",
     image: "/assets/projects/library.png",
     github: "",
   },
