@@ -16,7 +16,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Location",
-    description: "Brooklyn, NY",
+    description: "New York, NY",
   },
 ];
 
