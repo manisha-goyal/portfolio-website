@@ -42,7 +42,7 @@ const aboutTabs = [
         institution: "New York University",
         degree: "Master of Science in Computer Science, Courant Institute of Mathematical Sciences",
         duration: "Sep 2023 - May 2025 (expected)",
-        location: "New York City, NY",
+        location: "New York, NY",
         coursework:
           "Fundamental Algorithms, Operating Systems, Programming Language, Data Science, Artificial Intelligence, Databases, DevOps",
       },
