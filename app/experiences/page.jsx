@@ -89,7 +89,7 @@ const Experiences = () => {
       className="min-h-[80vh] flex items-start justify-center py-12 xl:py-10 bg-dark-gray">
       <div className="container mx-auto flex flex-col xl:flex-row">
         {/* Left Sidebar */}
-        <div className="flex flex-col xl:w-[35%] p-4 border-r border-accent">
+        <div className="flex flex-col xl:w-[30%] p-4 border-r border-accent">
           {experiences.map((experience, index) => (
             <button
               key={index}
@@ -112,7 +112,7 @@ const Experiences = () => {
         </div>
 
         {/* Right Content Area */}
-        <div className="flex flex-col xl:w-[65%] pl-8 mt-8 xl:mt-0">
+        <div className="flex flex-col xl:w-[70%] pl-8 mt-8 xl:mt-0">
           <h2 className="text-2xl font-bold text-white mb-2 text-white/90">
             {experiences[selectedExperience].position}{" "}
             <span className="text-accent">
