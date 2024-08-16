@@ -2,15 +2,17 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // Import all the icons
 import {
   FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaJava,
   FaLinux, FaEthereum, FaGitAlt, FaGithub, FaJenkins,
 } from "react-icons/fa";
+import { FaNoteSticky } from "react-icons/fa6";
 import {
-  SiCplusplus, SiC, SiScala, SiSolidity, SiJunit5, SiFlask,
-  SiPytest, SiSpringboot, SiCucumber, SiWeb3Dotjs, SiScikitlearn,
+  SiCplusplus, SiC, SiScala, SiSolidity, SiJunit5, SiFlask, SiPostman,
+  SiPytest, SiSpringboot, SiWeb3Dotjs, SiScikitlearn, SiOracle, SiOpenapiinitiative,
   SiNumpy, SiPandas, SiDocker, SiKubernetes, SiGooglecloud, SiAmazon,
   SiRedhatopenshift, SiAzuredevops, SiMysql, SiSwagger, SiApachehadoop,
   SiApachekafka, SiApachespark, SiBlockchaindotcom, SiTableau, SiJirasoftware,
@@ -20,6 +22,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineRadarChart, AiFillApi } from "react-icons/ai";
 import { DiScrum } from "react-icons/di";
 import { LuBrainCircuit } from "react-icons/lu";
+import { DiJira } from "react-icons/di";
 
 const about = {
   title: "About me",
@@ -28,12 +31,12 @@ const about = {
     "My journey has taken me from developing decentralized applications at J.P. Morgan to building scalable data lakes for cybersecurity. Now, I'm excited to explore new opportunities where I can combine my technical expertise with my love for innovation.",
     "When I'm not coding, you'll find me experimenting with new recipes, practicing yoga, or binge-watching the latest TV shows and movies."
   ],
+  image: "/assets/about/photo.png"
 };
 
 const aboutTabs = [
   {
     title: "Education",
-    description: "Solid academic foundation in computer science.",
     items: [
       {
         institution: "New York University",
@@ -64,87 +67,99 @@ const aboutTabs = [
   },
   {
     title: "Skills",
-    description:
-      "Adept in the React Ecosystem with proficiency in UI/UX collaboration using Figma.",
     skillCategories: [
       {
         category: "Languages",
         skills: [
-          { icon: <FaJava />, name: "java" },
-          { icon: <FaPython />, name: "python" },
-          { icon: <SiCplusplus />, name: "C++" },
+          { icon: <FaJava />, name: "Java" },
+          { icon: <SiScala />, name: "Scala" },
+          { icon: <FaPython />, name: "Python" },
           { icon: <SiC />, name: "C" },
-          { icon: <SiScala />, name: "scala" },
-          { icon: <SiSolidity />, name: "solidity" },
-          { icon: <FaNodeJs />, name: "node.js" },
-          { icon: <BsFiletypeSql />, name: "sql" },
-          { icon: <FaHtml5 />, name: "html 5" },
-          { icon: <FaCss3 />, name: "css 3" },
-          { icon: <FaJs />, name: "javascript" },
+          { icon: <SiCplusplus />, name: "C++" },
+          { icon: <SiSolidity />, name: "Solidity" },
+          { icon: <BsFiletypeSql />, name: "SQL" },
         ],
       },
       {
-        category: "Frameworks and Libraries",
+        category: "Web Technologies",
         skills: [
-          { icon: <SiSpringboot />, name: "sprintboot" },
-          { icon: <SiFlask />, name: "flask" },
-          { icon: <FaReact />, name: "react.js" },
-          { icon: <SiPandas />, name: "pandas" },
-          { icon: <SiJunit5 />, name: "jUnit" },
-          { icon: <SiPytest />, name: "pytest" },
-          { icon: <SiCucumber />, name: "cucumber" },
-          { icon: <SiWeb3Dotjs />, name: "web3.js" },
+          { icon: <FaNodeJs />, name: "Node.js" },
+          { icon: <FaJs />, name: "JavaScript" },
+          { icon: <FaHtml5 />, name: "HTML" },
+          { icon: <FaCss3 />, name: "CSS" },
         ],
       },
       {
-        category: "Machine Learning",
+        category: "Libraries",
         skills: [
-          { icon: <SiScikitlearn />, name: "scikit-learn" },
-          { icon: <SiNumpy />, name: "numpy" },
-          { icon: <AiOutlineRadarChart />, name: "matPlotLib" },
+          { icon: <SiScikitlearn />, name: "Scikit-Learn" },
+          { icon: <SiNumpy />, name: "NumPy" },
+          { icon: <SiPandas />, name: "Pandas" },
+          { icon: <AiOutlineRadarChart />, name: "Matplotlib" },
         ],
       },
       {
-        category: "Cloud and DevOps",
+        category: "Frameworks",
         skills: [
-          { icon: <SiDocker />, name: "docker" },
-          { icon: <SiKubernetes />, name: "kubernetes" },
-          { icon: <SiGooglecloud />, name: "gcp" },
-          { icon: <SiAmazon />, name: "aws" },
-          { icon: <SiRedhatopenshift />, name: "redhat openshift" },
-          { icon: <FaJenkins />, name: "jenkins" },
-          { icon: <FaGitAlt />, name: "git" },
-          { icon: <FaGithub />, name: "github" },
+          { icon: <SiSpringboot />, name: "SpringBoot" },
+          { icon: <SiFlask />, name: "Flask" },
+          { icon: <FaReact />, name: "React" },
+          { icon: <SiJunit5 />, name: "JUnit" },
+          { icon: <SiPytest />, name: "Pytest" },
+          { icon: <FaNoteSticky />, name: "Behave" },
+        ],
+      },
+      {
+        category: "Cloud",
+        skills: [
+          { icon: <SiRedhatopenshift />, name: "OpenShift" },
+          { icon: <SiKubernetes />, name: "Kubernetes" },
+          { icon: <SiGooglecloud />, name: "GCP" },
+          { icon: <SiAmazon />, name: "AWS" },
         ],
       },
       {
         category: "Databases",
         skills: [
-          { icon: <SiMysql />, name: "mySql" },
-          { icon: <BiLogoPostgresql />, name: "postgresql" },
+          { icon: <SiMysql />, name: "MySQL" },
+          { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
+          { icon: <SiOracle />, name: "Oracle" },
         ],
       },
       {
-        category: "SDLC and Practices",
+        category: "Methodologies",
         skills: [
-          { icon: <DiScrum />, name: "agile/scrum" },
-          { icon: <SiAzuredevops />, name: "devOps" },
-          { icon: <LuBrainCircuit />, name: "design-thinking" },
-          { icon: <SiJirasoftware />, name: "jira" },
+          { icon: <DiScrum />, name: "Agile/Scrum" },
+          { icon: <SiAzuredevops />, name: "DevOps" },
+          { icon: <LuBrainCircuit />, name: "Design Thinking" },
         ],
       },
       {
-        category: "Tools and Others",
+        category: "Dev Tools",
         skills: [
-          { icon: <FaLinux />, name: "linux" },
-          { icon: <AiFillApi />, name: "rest apis" },
-          { icon: <SiSwagger />, name: "swagger" },
-          { icon: <SiApachehadoop />, name: "hadoop" },
-          { icon: <SiApachekafka />, name: "kafka" },
-          { icon: <SiApachespark />, name: "spark" },
-          { icon: <FaEthereum />, name: "ethereum" },
-          { icon: <SiBlockchaindotcom />, name: "quorum" },
-          { icon: <SiTableau />, name: "tableau" },
+          { icon: <FaGitAlt />, name: "Git" },
+          { icon: <FaGithub />, name: "GitHub" },
+          { icon: <SiDocker />, name: "Docker" },
+          { icon: <FaJenkins />, name: "Jenkins" },
+          { icon: <SiPostman />, name: "Postman" },
+          { icon: <DiJira />, name: "Jira" },
+          { icon: <SiJirasoftware />, name: "Zenhub" },
+        ],
+      },
+      {
+        category: "Others",
+        skills: [
+          { icon: <FaLinux />, name: "Linux" },
+          { icon: <AiFillApi />, name: "REST API" },
+          { icon: <SiOpenapiinitiative />, name: "OpenAPI" },
+          { icon: <SiSwagger />, name: "Swagger" },
+          { icon: <SiApachehadoop />, name: "Apache Hadoop" },
+          { icon: <SiApachekafka />, name: "Apache Kafka" },
+          { icon: <SiApachespark />, name: "Apache Spark" },
+          { icon: <FaEthereum />, name: "Ethereum" },
+          { icon: <SiBlockchaindotcom />, name: "Quorum" },
+          { icon: <SiTableau />, name: "Tableau" },
+          { icon: <SiWeb3Dotjs />, name: "Web3.js" },
         ],
       },
     ],
@@ -210,9 +225,17 @@ const About = () => {
     >
       <div className="container mx-auto pb-16">
         {/* About */}
-        <div className="mb-16 flex flex-col items-start xl:items-center text-left xl:text-center">
-          <h3 className="text-4xl font-bold text-white/90">{about.title}</h3>
-          <div className="bg-secondary p-4 mt-4 rounded-lg text-justify">
+        <div className="bg-secondary p-6 rounded-lg flex flex-col xl:flex-row items-center justify-between">
+          <div className="flex-shrink-0 xl:mr-8">
+            <Image
+              src={about.image}
+              alt="Profile Image"
+              width={300}
+              height={300}
+              className="rounded-lg"
+            />
+          </div>
+          <div className="flex-1 mt-8 xl:mt-0">
             {about.description.map((paragraph, index) => (
               <p
                 key={index}
@@ -224,7 +247,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col xl:flex-row">
+        <div className="flex flex-col xl:flex-row p-8 mt-8">
           {/* Left Sidebar */}
           <div className="flex flex-col xl:w-[20%] p-4 border-r border-accent">
             {aboutTabs.map((aboutTab, index) => (
