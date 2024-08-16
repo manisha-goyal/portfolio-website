@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const experiences = [
   {
-    company: "J.P. Morgan Chase",
-    position: "Software Engineer (Associate), Onyx by J.P. Morgan",
+    company: "Onyx by J.P. Morgan",
+    position: "Software Engineer (Associate)",
     duration: "May 2020 - June 2023",
     location: "Singapore",
     description: [
