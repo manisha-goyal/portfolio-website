@@ -10,7 +10,7 @@ const Photo = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 0.8, duration: 0.4, ease: "easeIn" },
+          transition: { delay: 2, duration: 0.4, ease: "easeIn" },
         }}
       >
         {/* image */}
@@ -18,9 +18,9 @@ const Photo = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
+            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[250px] h-[250px] xl:w-[350px] xl:h-[350px] mix-blend-lighten absolute"
+          className="w-[300px] h-[300px] xl:w-[500px] xl:h-[500px] mix-blend-lighten absolute"
         >
           <Image
             src="/assets/photo.png"
@@ -28,16 +28,39 @@ const Photo = () => {
             quality={100}
             fill
             alt=""
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 350px"
-            className="object-contain"
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 500px"
+            className="object-cover rounded-full"
           />
         </motion.div>
+
+        {/* circle */}
         <motion.svg
-          className="w-[250px] h-[250px] xl:w-[350px] xl:h-[350px]"
+          className="w-[300px] h-[300px] xl:w-[500px] xl:h-[500px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <motion.circle
+            cx="253"
+            cy="253"
+            r="252"
+            stroke="#64ffda"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{
+              strokeDasharray: "24 10 0 0",
+            }}
+            animate={{
+              strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+              rotate: [120, 360],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          />
         </motion.svg>
       </motion.div>
     </div>

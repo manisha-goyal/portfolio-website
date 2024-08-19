@@ -18,10 +18,6 @@ const Home = () => {
     >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col xl:flex-row items-center justify-center gap-8 xl:gap-4">
-          {/* photo */}
-          <div className="w-full xl:w-[40%] flex justify-center">
-            <Photo />
-          </div>
           {/* text */}
           <div className="text-center xl:text-left w-full xl:w-[50%]">
             <h4 className="h4 mb-2 text-white/70">Hi, my name is</h4>
@@ -48,6 +44,10 @@ const Home = () => {
                 />
               </div>
             </div>
+          </div>
+          {/* photo */}
+          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+            <Photo />
           </div>
         </div>
       </div>
