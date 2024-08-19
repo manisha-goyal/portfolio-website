@@ -103,14 +103,6 @@ const projects = [
     image: "/assets/projects/library.png",
     github: "https://github.com/manisha-goyal/library-training-effectiveness-analysis",
   },
-  {
-    title: "Personal Developer Portfolio",
-    description:
-      "Designed and developed a responsive personal portfolio website using Next.js and Tailwind CSS, showcasing projects, skills, and expertise as a software engineer. Integrated Framer Motion for smooth animations and shadcn-ui for enhanced UI components.",
-    technologies: "Next.js, React, Tailwind CSS, Framer Motion, Responsive Web Design, shadcn-ui, GitHub, Vercel",
-    image: "/assets/demo.png",
-    github: "https://github.com/manisha-goyal/portfolio-website",
-  },
 ];
 
 const Projects = () => {
