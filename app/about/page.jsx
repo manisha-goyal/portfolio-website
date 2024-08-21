@@ -27,9 +27,9 @@ import { DiJira } from "react-icons/di";
 const about = {
   title: "About me",
   description: [
-    "I'm a software engineer with a deep passion for creating innovative and scalable solutions. Currently, I'm pursuing a Master's in Computer Science at New York University (Courant Institute of Mathematical Sciences), where I'm delving into cutting-edge topics like Artificial Intelligence and Machine Learning.",
-    "My journey has taken me from developing decentralized applications at J.P. Morgan to building scalable data lakes for cybersecurity. Now, I'm excited to explore new opportunities where I can combine my technical expertise with my love for innovation.",
-    "When I'm not coding, you'll find me experimenting with new recipes, practicing yoga, or binge-watching the latest TV shows and movies."
+    "I'm a software engineer with a passion for applying technology and innovation to solve complex problems and make a tangible impact. Currently, I'm pursuing a Master's in Computer Science at New York University (Courant Institute of Mathematical Sciences), where I'm delving into cutting-edge topics like Artificial Intelligence and Machine Learning.",
+    "My journey has taken me from developing decentralized applications at J.P. Morgan, including contributing to pioneering projects like the JPM Coin System, to building scalable data lakes for cybersecurity. I thrive on teamwork and innovation, always seeking to collaborate on projects that push technological boundaries and drive progress. Now, I'm excited to explore new opportunities where I can combine my technical expertise with my love for innovation.",
+    "When I'm not coding, you'll find me experimenting with new recipes, practicing yoga, or binge-watching the latest TV shows and movies!"
   ],
   image: "/assets/about/photo.png"
 };
