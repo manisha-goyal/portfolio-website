@@ -232,7 +232,7 @@ const About = () => {
               alt="Profile Image"
               width={300}
               height={300}
-              className="rounded-lg"
+              //className="rounded-lg"
             />
           </div>
           <div className="flex-1 mt-8 xl:mt-0">
@@ -247,7 +247,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col xl:flex-row p-8 mt-8">
+        <div className="flex flex-col xl:flex-row p-4 mt-4">
           {/* Left Sidebar */}
           <div className="flex flex-col xl:w-[20%] p-4 border-r border-accent">
             {aboutTabs.map((aboutTab, index) => (
