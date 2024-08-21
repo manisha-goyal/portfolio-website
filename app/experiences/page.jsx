@@ -40,8 +40,8 @@ const experiences = [
     logo: "/assets/experiences/jpmorganchase_logo.png",
   },
   {
-    company: "Li Ka Shing Library",
-    position: "Data Analyst Intern",
+    company: "Singapore Management University",
+    position: "Data Analyst Intern, Li Ka Shing Library",
     duration: "Nov 2016 - April 2017",
     location: "Singapore",
     description: [
