@@ -31,7 +31,7 @@ const experiences = [
   },
   {
     company: "J.P. Morgan Chase",
-    position: "Software Engineer Intern, Cybersecurity",
+    position: "Software Engineering Intern, Cybersecurity",
     duration: "May 2017 - Jul 2017",
     location: "Singapore",
     description: [
