@@ -198,7 +198,7 @@ const About = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex flex-col items-center justify-center text-center p-4 bg-secondary rounded-lg">
                     <div className="text-xl text-accent mb-2">{skill.icon}</div>
-                    <p className="text-white/60">{skill.name}</p>
+                    <p className="text-white/60 text-center break-words">{skill.name}</p>
                   </li>
                 ))}
               </ul>
