@@ -194,11 +194,11 @@ const About = () => {
                   {category.category}
                 </h3>
               </div>
-              <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 xl:gap-[30px]">
+              <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2 xl:gap-[10px]">
                 {category.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex flex-col items-center justify-center text-center p-4 bg-secondary rounded-lg">
                     <div className="text-xl text-accent mb-2">{skill.icon}</div>
-                    <p className="text-white/60 text-center break-words">{skill.name}</p>
+                    <p className="text-white/60">{skill.name}</p>
                   </li>
                 ))}
               </ul>
