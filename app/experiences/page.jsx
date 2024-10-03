@@ -12,7 +12,7 @@ const experiences = [
     location: "Singapore",
     description: [
       "Worked closely with a global team of **55 developers** to develop pioneer blockchain-based payment platforms",
-      "Developed decentralized application from the ground up (Java, Web3.js, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network that allows **near-instant** cross-border liquidity funding for institutional clients",
+      "Developed decentralized application from the ground up (Java, SQL, Web3.js, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network that allows **near-instant** cross-border liquidity funding for institutional clients",
       "Led development and live deployment of blockchain ledger (Smart Contracts, Solidity) for Partior, an inter-bank blockchain network enabling multi-currency atomic settlements across major global banks in under **2 minutes**",
       "Built proof-of-concept (Solidity Diamond Standard) to make Partior's blockchain ledger scalable and upgradable, contributing to successful transaction of tokenized Singapore government securities on the Polygon network",
     ],
