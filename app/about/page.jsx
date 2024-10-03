@@ -16,6 +16,7 @@ import {
   SiNumpy, SiPandas, SiDocker, SiKubernetes, SiGooglecloud, SiAmazon,
   SiRedhatopenshift, SiAzuredevops, SiMysql, SiSwagger, SiApachehadoop,
   SiApachekafka, SiApachespark, SiBlockchaindotcom, SiTableau, SiJirasoftware,
+  SiTailwindcss, SiPytorch, SiOpencv, SiStreamlit
 } from "react-icons/si";
 import { BsFiletypeSql } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -23,6 +24,7 @@ import { AiOutlineRadarChart, AiFillApi } from "react-icons/ai";
 import { DiScrum } from "react-icons/di";
 import { LuBrainCircuit } from "react-icons/lu";
 import { DiJira } from "react-icons/di";
+
 
 const about = {
   title: "About me",
@@ -69,7 +71,7 @@ const aboutTabs = [
     title: "Skills",
     skillCategories: [
       {
-        category: "Languages",
+        category: "Languages and Web Technologies",
         skills: [
           { icon: <FaJava />, name: "Java" },
           { icon: <SiScala />, name: "Scala" },
@@ -78,24 +80,10 @@ const aboutTabs = [
           { icon: <SiCplusplus />, name: "C++" },
           { icon: <SiSolidity />, name: "Solidity" },
           { icon: <BsFiletypeSql />, name: "SQL" },
-        ],
-      },
-      {
-        category: "Web Technologies",
-        skills: [
           { icon: <FaNodeJs />, name: "Node.js" },
           { icon: <FaJs />, name: "JavaScript" },
           { icon: <FaHtml5 />, name: "HTML" },
           { icon: <FaCss3 />, name: "CSS" },
-        ],
-      },
-      {
-        category: "Libraries",
-        skills: [
-          { icon: <SiScikitlearn />, name: "Scikit-Learn" },
-          { icon: <SiNumpy />, name: "NumPy" },
-          { icon: <SiPandas />, name: "Pandas" },
-          { icon: <AiOutlineRadarChart />, name: "Matplotlib" },
         ],
       },
       {
@@ -104,9 +92,30 @@ const aboutTabs = [
           { icon: <SiSpringboot />, name: "SpringBoot" },
           { icon: <SiFlask />, name: "Flask" },
           { icon: <FaReact />, name: "React" },
+          { icon: <SiTailwindcss />, name: "TailwindCSS" },
           { icon: <SiJunit5 />, name: "JUnit" },
           { icon: <SiPytest />, name: "Pytest" },
           { icon: <FaNoteSticky />, name: "Behave" },
+        ],
+      },
+      {
+        category: "Databases",
+        skills: [
+          { icon: <SiMysql />, name: "MySQL" },
+          { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
+          { icon: <SiOracle />, name: "Oracle" },
+        ],
+      },
+      {
+        category: "Machine Learning",
+        skills: [
+          { icon: <SiPytorch />, name: "PyTorch" },
+          { icon: <SiOpencv />, name: "OpenCV" },
+          { icon: <SiScikitlearn />, name: "Scikit-Learn" },
+          { icon: <SiNumpy />, name: "NumPy" },
+          { icon: <SiPandas />, name: "Pandas" },
+          { icon: <AiOutlineRadarChart />, name: "Matplotlib" },
+          { icon: <SiStreamlit />, name: "Streamlit" },
         ],
       },
       {
@@ -119,23 +128,7 @@ const aboutTabs = [
         ],
       },
       {
-        category: "Databases",
-        skills: [
-          { icon: <SiMysql />, name: "MySQL" },
-          { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
-          { icon: <SiOracle />, name: "Oracle" },
-        ],
-      },
-      {
-        category: "Methodologies",
-        skills: [
-          { icon: <DiScrum />, name: "Agile/Scrum" },
-          { icon: <SiAzuredevops />, name: "DevOps" },
-          { icon: <LuBrainCircuit />, name: "Design Thinking" },
-        ],
-      },
-      {
-        category: "Dev Tools",
+        category: "Dev Tools and Methodologies",
         skills: [
           { icon: <FaGitAlt />, name: "Git" },
           { icon: <FaGithub />, name: "GitHub" },
@@ -144,6 +137,8 @@ const aboutTabs = [
           { icon: <SiPostman />, name: "Postman" },
           { icon: <DiJira />, name: "Jira" },
           { icon: <SiJirasoftware />, name: "Zenhub" },
+          { icon: <DiScrum />, name: "Agile/Scrum" },
+          { icon: <SiAzuredevops />, name: "DevOps" },
         ],
       },
       {
