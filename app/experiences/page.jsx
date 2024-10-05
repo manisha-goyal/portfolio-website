@@ -25,7 +25,7 @@ const experiences = [
     location: "Singapore",
     description: [
       "Developed Cybersecurity Data Lake (Apache Hadoop, Apache Kafka, SQL, Linux, Docker), enhancing the firm's real-time cybersecurity incident monitoring capabilities by **75%** and reducing incident response times by **30%**",
-      "As Global Application Owner, led deployment and production management of JPMC Cybersecurity Log Collector, enabling real-time processing of syslog messages across **200+ global systems** with **99.9% uptime**, enhancing security for critical operations",
+      "As Global Application Owner, led deployment and production management of JPMC Cybersecurity Log Collector (Java, Linux, Shell Scripting, Jenkins), enabling real-time processing of syslog messages across **200+ global systems** with **99.9% uptime**, enhancing security for critical operations",
     ],
     logo: "/assets/experiences/jpmorganchase_logo.png",
   },
@@ -35,7 +35,7 @@ const experiences = [
     duration: "May 2017 - Jul 2017",
     location: "Singapore",
     description: [
-      "Built an automation tool (Java, SpringBoot) to parse and analyze static security scanning results, boosting efficiency in the firm's application security assessments by over **90%** and reducing the evaluation times by **80%**",
+      "Built an automation tool (Java, SpringBoot, SQL, Jenkins) to parse and analyze static security scanning results, boosting efficiency in the firm's application security assessments by over **90%** and reducing the evaluation times by **80%**",
     ],
     logo: "/assets/experiences/jpmorganchase_logo.png",
   },
