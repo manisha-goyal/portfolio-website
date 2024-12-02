@@ -43,7 +43,7 @@ const aboutTabs = [
         duration: "Sep 2023 - May 2025 (expected)",
         location: "New York, NY",
         coursework:
-          "Fundamental Algorithms, Operating Systems, Programming Language, Data Science, Artificial Intelligence, Databases, DevOps",
+          "Fundamental Algorithms, Operating Systems, Programming Language, DevOps, Data Science, Artificial Intelligence, Computer Vision, GPUs, Cloud and Machine Learning",
       },
       {
         institution: "Singapore Management University",
