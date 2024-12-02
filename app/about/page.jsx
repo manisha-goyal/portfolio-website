@@ -22,7 +22,7 @@ import { BsFiletypeSql } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineRadarChart, AiFillApi } from "react-icons/ai";
 import { DiScrum, DiJira } from "react-icons/di";
-import { ReactComponent as PineconeIcon } from './assets/about/pinecone.svg';
+import { ReactComponent as PineconeIcon } from './assets/about/pinecone-icon.svg';
 
 const about = {
   title: "About me",
