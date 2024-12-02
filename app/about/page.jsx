@@ -21,10 +21,8 @@ import {
 import { BsFiletypeSql } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineRadarChart, AiFillApi } from "react-icons/ai";
-import { DiScrum } from "react-icons/di";
-import { LuBrainCircuit } from "react-icons/lu";
-import { DiJira } from "react-icons/di";
-
+import { DiScrum, DiJira } from "react-icons/di";
+import { ReactComponent as PineconeIcon } from './assets/about/pinecone.svg';
 
 const about = {
   title: "About me",
@@ -104,6 +102,7 @@ const aboutTabs = [
           { icon: <SiMysql />, name: "MySQL" },
           { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
           { icon: <SiOracle />, name: "Oracle" },
+          { icon: <PineconeIcon />, name: "Pinecone" }
         ],
       },
       {
