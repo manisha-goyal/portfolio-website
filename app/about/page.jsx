@@ -38,12 +38,12 @@ const aboutTabs = [
     title: "Education",
     items: [
       {
-        institution: "New York University, Courant Institute of Mathematical Sciences",
-        degree: "Master of Science in Computer Science, Major in Artificial Intelligence",
+        institution: "New York University",
+        degree: "Courant Institute of Mathematical Sciences, Master of Science in Computer Science, Major in Artificial Intelligence",
         duration: "Sep 2023 - May 2025 (expected)",
         location: "New York, NY",
         coursework:
-          "Fundamental Algorithms, Operating Systems, Programming Languages, DevOps, Data Science, Artificial Intelligence, Natural Language Processing, Computer Vision, GPUs, Cloud and Machine Learning",
+          "Algorithms, Operating Systems, DevOps, Data Science, Natural Language Processing, Computer Vision, GPUs, Cloud and Machine Learning",
       },
       {
         institution: "Singapore Management University",
