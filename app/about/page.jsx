@@ -9,18 +9,18 @@ import {
   FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaJava,
   FaLinux, FaEthereum, FaGitAlt, FaGithub, FaJenkins,
 } from "react-icons/fa";
-import { FaNoteSticky } from "react-icons/fa6";
+import { FaNoteSticky, FaDatabase } from "react-icons/fa6";
 import {
   SiCplusplus, SiC, SiScala, SiSolidity, SiJunit5, SiFlask, SiPostman,
-  SiPytest, SiSpringboot, SiWeb3Dotjs, SiScikitlearn, SiOracle, SiOpenapiinitiative,
+  SiPytest, SiSpringboot, SiWeb3Dotjs, SiScikitlearn, SiOpenapiinitiative,
   SiNumpy, SiPandas, SiDocker, SiKubernetes, SiGooglecloud, SiAmazon,
   SiRedhatopenshift, SiAzuredevops, SiMysql, SiSwagger, SiApachehadoop,
   SiApachekafka, SiApachespark, SiBlockchaindotcom, SiTableau, SiJirasoftware,
-  SiTailwindcss, SiPytorch, SiOpencv, SiStreamlit
+  SiTailwindcss, SiPytorch, SiOpencv, SiMongodb, SiLangchain
 } from "react-icons/si";
 import { BsFiletypeSql } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { AiOutlineRadarChart, AiFillApi } from "react-icons/ai";
+import { AiOutlineRadarChart, AiFillApi, AiOutlineOpenAI } from "react-icons/ai";
 import { DiScrum, DiJira } from "react-icons/di";
 
 const about = {
@@ -43,7 +43,7 @@ const aboutTabs = [
         duration: "Sep 2023 - May 2025 (expected)",
         location: "New York, NY",
         coursework:
-          "Fundamental Algorithms, Operating Systems, Programming Language, DevOps, Data Science, Artificial Intelligence, Computer Vision, GPUs, Cloud and Machine Learning",
+          "Fundamental Algorithms, Operating Systems, Programming Languages, DevOps, Data Science, Artificial Intelligence, Natural Language Processing, Computer Vision, GPUs, Cloud and Machine Learning",
       },
       {
         institution: "Singapore Management University",
@@ -100,19 +100,21 @@ const aboutTabs = [
         skills: [
           { icon: <SiMysql />, name: "MySQL" },
           { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
-          { icon: <SiOracle />, name: "Oracle" },
+          { icon: <SiMongodb />, name: "MongoDB" },
+          { icon: <FaDatabase />, name: "Pinecone" },
         ],
       },
       {
         category: "Machine Learning",
         skills: [
           { icon: <SiPytorch />, name: "PyTorch" },
-          { icon: <SiOpencv />, name: "OpenCV" },
           { icon: <SiScikitlearn />, name: "Scikit-Learn" },
           { icon: <SiNumpy />, name: "NumPy" },
           { icon: <SiPandas />, name: "Pandas" },
           { icon: <AiOutlineRadarChart />, name: "Matplotlib" },
-          { icon: <SiStreamlit />, name: "Streamlit" },
+          { icon: <SiOpencv />, name: "OpenCV" },
+          { icon: <SiLangchain />, name: "LangChain" },
+          { icon: <AiOutlineOpenAI />, name: "OpenAI GPT" },
         ],
       },
       {
