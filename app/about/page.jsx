@@ -38,8 +38,8 @@ const aboutTabs = [
     title: "Education",
     items: [
       {
-        institution: "New York University",
-        degree: "Master of Science in Computer Science, Courant Institute of Mathematical Sciences",
+        institution: "New York University, Courant Institute of Mathematical Sciences",
+        degree: "Master of Science in Computer Science, Major in Artificial Intelligence",
         duration: "Sep 2023 - May 2025 (expected)",
         location: "New York, NY",
         coursework:
@@ -47,7 +47,7 @@ const aboutTabs = [
       },
       {
         institution: "Singapore Management University",
-        degree: "Bachelor of Science in Information Systems Management",
+        degree: "Bachelor of Science in Information Systems Management, Double Major in Information Systems and Analytics (Advanced Technology)",
         duration: "Aug 2014 - Apr 2018",
         location: "Singapore",
         coursework:
