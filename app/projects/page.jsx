@@ -169,7 +169,7 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover"
                   />
                 </div>
               </div>
