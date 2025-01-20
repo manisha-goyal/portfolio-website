@@ -18,7 +18,7 @@ const projects = [
   {
     title: "ASL Interpretation",
     description:
-      "Fine-tuned LLaVA-NeXT-Video (a Large Vision and Langauge Model) on the How2Sign dataset to translate American Sign Language (ASL) gestures into English text",
+      "Developed a model for continuous American Sign Language (ASL) interpretation using LLaVA-NeXT-Video, fine-tuned on the How2Sign dataset with parameter-efficient techniques (LoRA and QLoRA), enhancing accessibility by translating ASL gestures into coherent English text",
     technologies: "Python, PyTorch, LLVM, LLaVA-NeXT-Video, QLoRA",
     image: "/assets/projects/asl.png",
     github: "https://github.com/manisha-goyal/asl-interpreter",
