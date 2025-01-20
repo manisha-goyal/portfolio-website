@@ -14,7 +14,7 @@ import {
   SiCplusplus, SiC, SiScala, SiSolidity, SiJunit5, SiFlask, SiPostman,
   SiPytest, SiSpringboot, SiWeb3Dotjs, SiScikitlearn, SiOpenapiinitiative,
   SiNumpy, SiPandas, SiDocker, SiKubernetes, SiGooglecloud, SiAmazon,
-  SiRedhatopenshift, SiAzuredevops, SiMysql, SiSwagger, SiApachehadoop,
+  SiRedhatopenshift, SiMysql, SiSwagger, SiApachehadoop,
   SiApachekafka, SiApachespark, SiBlockchaindotcom, SiTableau, SiJirasoftware,
   SiTailwindcss, SiPytorch, SiOpencv, SiMongodb, SiLangchain
 } from "react-icons/si";
@@ -22,6 +22,7 @@ import { BsFiletypeSql } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineRadarChart, AiFillApi, AiOutlineOpenAI } from "react-icons/ai";
 import { DiScrum, DiJira } from "react-icons/di";
+import { VscAzureDevops } from "react-icons/vsc";
 
 const about = {
   title: "About me",
@@ -137,7 +138,7 @@ const aboutTabs = [
           { icon: <DiJira />, name: "Jira" },
           { icon: <SiJirasoftware />, name: "Zenhub" },
           { icon: <DiScrum />, name: "Agile/Scrum" },
-          { icon: <SiAzuredevops />, name: "DevOps" },
+          { icon: <VscAzureDevops />, name: "DevOps" },
         ],
       },
       {
