@@ -24,9 +24,9 @@ const projects = [
     github: "https://github.com/manisha-goyal/asl-interpreter",
   },
   {
-    title: "Retrieval-Augmented Generation (RAG) Chatbot for Research Papers",
+    title: "RAG Chatbot for Research Papers",
     description:
-      "Built RAG chatbot for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost",
+      "Built Retrieval-Augmented Generation (RAG) chatbot for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost",
     technologies: "Python, Pinecone, LangChain, OpenAI GPT-3.5-Turbo LLM, Langtrace, Kubernetes",
     image: "/assets/projects/chatbot.png",
     github: "https://github.com/manisha-goyal/research-paper-rag-chatbot",
