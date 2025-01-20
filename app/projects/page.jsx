@@ -16,6 +16,46 @@ import {
 
 const projects = [
   {
+    title: "ASL Interpretation",
+    description:
+      "Fine-tuned LLaVA-NeXT-Video (a Large Vision and Langauge Model) on the How2Sign dataset to translate American Sign Language (ASL) gestures into English text",
+    technologies: "Python, PyTorch, LLVM, LLaVA-NeXT-Video, QLoRA",
+    image: "/assets/projects/asl.png",
+    github: "https://github.com/manisha-goyal/asl-interpreter",
+  },
+  {
+    title: "Retrieval-Augmented Generation (RAG) Chatbot for Research Papers",
+    description:
+      "Built RAG chatbot for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost",
+    technologies: "Python, Pinecone, LangChain, OpenAI GPT-3.5-Turbo LLM, Langtrace, Kubernetes",
+    image: "/assets/projects/chatbot.png",
+    github: "https://github.com/manisha-goyal/research-paper-rag-chatbot",
+  },
+  {
+    title: "GPU Power Optimization using Frequency Scaling",
+    description:
+      "Optimized GPU energy efficiency using clock frequency scaling strategies, leveraging the Accel-Sim framework to simulate and analyze workload behaviors across NVIDIA architectures; achieved insights into energy-aware configurations for diverse computational tasks",
+    technologies: "Accel-Sim, AccelWattch, CUDA",
+    image: "/assets/projects/gpu.png",
+    github: "https://github.com/manisha-goyal/gpu-energy-optimization",
+  },
+  {
+    title: "Transformer Model Implementation",
+    description:
+      "Implemented a transformer model from scratch using PyTorch; gained an understanding of its essential components, including multi-head self-attention, positional encodings, and encoder-decoder layers",
+    technologies: "Python, PyTorch, Transformers",
+    image: "/assets/projects/transformer.png",
+    github: "https://github.com/manisha-goyal/transformer-model-implementation",
+  },
+  {
+    title: "Performance Analysis of Conv2d Layer in CNNs",
+    description:
+      "Conducted a comprehensive performance analysis of the Conv2d-2 layer in a Convolutional Neural Network (CNN) trained on the MNIST dataset; evaluated both theoretical and empirical metrics, focusing on FLOPs (Floating Point Operations) and memory usage across different batch sizes on an NVIDIA V100 GPU using PyTorch",
+    technologies: "Python, PyTorch, NVIDIA Nsight Compute",
+    image: "/assets/projects/cnn.png",
+    github: "https://github.com/manisha-goyal/cnn-performance-analysis-mnist",
+  },
+  {
     title: "House Value Prediction",
     description:
       "Developed a machine learning model using XGBoost and other techniques to predict residential property prices in Ames, Iowa, achieving an R² score of 0.918; provided actionable insights for real estate stakeholders to optimize investment strategies",
