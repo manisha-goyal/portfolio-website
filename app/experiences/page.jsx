@@ -6,6 +6,17 @@ import Image from "next/image";
 
 const experiences = [
   {
+    company: "GreenPortfolio",
+    position: "Software Engineer Intern",
+    duration: "Jan 2025 - Present",
+    location: "New York, NY",
+    description: [
+      "Enhancing financial advisor matching service APIs (Python, Flask, PostgreSQL, GCP) to improve client-advisor recommendations, streamline platform functionality, and enhance user experience",
+      "Automating data refreshes and re-scoring for green investments scorecing platform, ensuring real-time climate impact assessments",
+    ],
+    logo: "/assets/experiences/greenportfolio_logo.png",
+  },
+  {
     company: "Onyx by J.P. Morgan",
     position: "Software Engineer (Associate)",
     duration: "May 2020 - June 2023",
@@ -31,7 +42,7 @@ const experiences = [
   },
   {
     company: "J.P. Morgan Chase",
-    position: "Software Engineering Intern, Cybersecurity",
+    position: "Software Engineer Intern, Cybersecurity",
     duration: "May 2017 - Jul 2017",
     location: "Singapore",
     description: [
@@ -51,7 +62,7 @@ const experiences = [
   },
   {
     company: "Fujitsu-SMU Urban Computing and Engineering Lab",
-    position: "Software Engineering Intern",
+    position: "Software Engineer Intern",
     duration: "Apr 2016 - Jul 2016",
     location: "Singapore",
     description: [
@@ -61,7 +72,7 @@ const experiences = [
   },
   {
     company: "CESC Limited",
-    position: "Information Technology Intern",
+    position: "Software Engineer Intern",
     duration: "Jun 2015 - Jul 2015",
     location: "Kolkata, India",
     description: [
