@@ -17,7 +17,7 @@ const experiences = [
     logo: "/assets/experiences/greenportfolio_logo.png",
   },
   {
-    company: "Onyx by J.P. Morgan",
+    company: "Kinexys (formerly Onyx) by J.P. Morgan",
     position: "Software Engineer (Associate)",
     duration: "May 2020 - June 2023",
     location: "Singapore",
