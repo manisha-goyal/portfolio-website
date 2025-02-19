@@ -27,7 +27,7 @@ const projects = [
     title: "RAG Chatbot for Research Papers",
     description:
       "Built Retrieval-Augmented Generation (RAG) chatbot for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost",
-    technologies: "Python, Pinecone, LangChain, OpenAI GPT-3.5-Turbo LLM, Langtrace, Kubernetes",
+    technologies: "Python, Pinecone, LangChain, OpenAI GPT-3.5-Turbo LLM, Langtrace, Kubernetes", 
     image: "/assets/projects/chatbot.png",
     github: "https://github.com/manisha-goyal/research-paper-rag-chatbot",
   },
@@ -46,6 +46,14 @@ const projects = [
     technologies: "Python, PyTorch, Transformers",
     image: "/assets/projects/transformer.png",
     github: "https://github.com/manisha-goyal/transformer-model-implementation",
+  },
+  {
+    title: "ResNet-18 for EMNIST Classification",
+    description:
+      "Implemented and trained a ResNet-18 model for classifying handwritten digits and uppercase letters using the EMNIST dataset. Evaluated model performance with precision, recall, and F1-score metrics, achieving 93.35% validation accuracy.",
+    technologies: "Python, TensorFlow, Keras, EMNIST, ResNet-18, Scikit-learn, Matplotlib",
+    image: "/assets/projects/resnet18.png",
+    github: "https://github.com/manisha-goyal/resnet18-emnist",
   },
   {
     title: "Performance Analysis of Conv2d Layer in CNNs",
