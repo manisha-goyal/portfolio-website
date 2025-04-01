@@ -56,6 +56,14 @@ const projects = [
     github: "https://github.com/manisha-goyal/resnet18-emnist",
   },
   {
+    title: "Object Matching with Hungarian Algorithm",
+    description:
+      "Implemented bipartite matching of objects across surveillance frames using a custom cost matrix combining IoU and centroid distance; applied the Hungarian algorithm for optimal assignment and visualized results with color-coded bounding boxes",
+    technologies: "Python, OpenCV, NumPy, SciPy, Matplotlib, Hungarian Algorithm",
+    image: "/assets/projects/hungarian.png",
+    github: "https://github.com/manisha-goyal/detr_bipartite_matching",
+  },  
+  {
     title: "Performance Analysis of Conv2d Layer in CNNs",
     description:
       "Conducted a comprehensive performance analysis of the Conv2d-2 layer in a Convolutional Neural Network (CNN) trained on the MNIST dataset; evaluated both theoretical and empirical metrics, focusing on FLOPs (Floating Point Operations) and memory usage across different batch sizes on an NVIDIA V100 GPU using PyTorch",
