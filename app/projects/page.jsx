@@ -26,7 +26,7 @@ const projects = [
   {
     title: "RAG Chatbot for Research Papers",
     description:
-      "Built and deployed RAG chatbot on cloud for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost and CI/CD pipeline for scalablility",
+      "Built RAG chatbot for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost and and deployed with a CI/CD pipeline for scalability",
     technologies: "Python, Pinecone, LangChain, OpenAI GPT-3.5-Turbo LLM, Langtrace, Kubernetes", 
     image: "/assets/projects/chatbot.png",
     github: "https://github.com/manisha-goyal/research-paper-rag-chatbot",
@@ -34,7 +34,7 @@ const projects = [
   {
     title: "GPU Power Optimization using Frequency Scaling",
     description:
-      "Optimized GPU energy efficiency using clock frequency scaling strategies, leveraging the Accel-Sim framework to simulate and analyze workload behaviors across NVIDIA architectures; achieved insights into energy-aware configurations for diverse computational tasks",
+      "Researched GPU energy optimization using clock frequency scaling strategies, leveraging Accel-Sim framework to analyze workload behaviors across NVIDIA architectures; achieved insights into energy-aware configurations for diverse computational tasks",
     technologies: "Accel-Sim, AccelWattch, CUDA",
     image: "/assets/projects/gpu.png",
     github: "https://github.com/manisha-goyal/gpu-energy-optimization",
@@ -74,7 +74,7 @@ const projects = [
   {
     title: "House Value Prediction",
     description:
-      "Developed a machine learning model using XGBoost and other techniques to predict residential property prices in Ames, Iowa, achieving an R² score of 0.918; provided actionable insights for real estate stakeholders to optimize investment strategies",
+      "Developed a machine learning model using XGBoost and other techniques to predict residential property prices in Ames, Iowa, achieving R² score of 0.918; provided actionable insights for real estate stakeholders to optimize investment strategies",
     technologies: "Python, Scikit-learn, XGBoost, Pandas, Matplotlib, SHAP values",
     image: "/assets/projects/housing.png",
     github: "https://github.com/manisha-goyal/housing-value-predictor",

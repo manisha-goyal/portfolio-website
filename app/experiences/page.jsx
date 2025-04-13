@@ -23,7 +23,7 @@ const experiences = [
     location: "Singapore",
     description: [
       "Worked closely with a global team of **55 developers** to develop pioneer blockchain-based payment platforms",
-      "Developed decentralized application from the ground up (Java, SQL, Web3.js, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network allowing **near-instant** cross-border liquidity funding for institutional clients, processing **billions in daily transactions** since launch and **reducing funding time by 99.8%** (from days to minutes)",
+      "Developed decentralized application from the ground up (Java, SQL, Web3.js, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network allowing **near-instant** cross-border liquidity funding for institutional clients, processing **billions in daily transactions** since launch, and **reducing funding time by 99.8%** (from days to minutes)",
       "Led development and live deployment of blockchain ledger (Smart Contracts, Solidity) for Partior, an inter-bank blockchain network supporting multi-currency atomic settlements between major global banks, cutting settlement time from several days to **under 2 minutes**",
     ],
     logo: "/assets/experiences/jpmorganchase_logo.png",
@@ -34,7 +34,7 @@ const experiences = [
     duration: "Aug 2018 - Apr 2020",
     location: "Singapore",
     description: [
-      "Developed Cybersecurity Data Lake (Apache Hadoop, Apache Kafka, SQL, Linux, Docker), enhancing the firm's real-time cybersecurity incident monitoring capabilities by **75%** and reducing incident response times by **30%**",
+      "Developed Cybersecurity Data Lake (Apache Hadoop, Apache Kafka, SQL, Linux, Docker), enhancing the firm's real-time cybersecurity incident monitoring capabilities by **75%** and reducing incident response time by **30%**",
       "As Global Application Owner, led deployment and production management of JPMC Cybersecurity Log Collector (Java, Linux, Shell Scripting, Jenkins), enabling real-time processing of syslog messages across **200+ global systems** with **99.9% uptime**, enhancing security for critical operations",
     ],
     logo: "/assets/experiences/jpmorganchase_logo.png",
