@@ -11,8 +11,8 @@ const experiences = [
     duration: "Jan 2025 - Present",
     location: "New York, NY",
     description: [
-      "Enhancing financial advisor matching service APIs (Python, Flask, PostgreSQL, GCP) to improve client-advisor recommendations, streamline platform functionality, and enhance user experience",
-      "Automating data refreshes and re-scoring for green investments scorecing platform, ensuring real-time climate impact assessments",
+      "Enhanced financial advisor matching service (Python, Flask, PostgreSQL, GCP) by improving client-advisor recommendation accuracy and streamlining platform workflows to make user experience more intuitive, contributing to **60% increase in user adoption**",
+      "Built pipeline for ESG data ingestion and climate impact re-scoring of 12,000+ companies and funds (Python, GCP, Docker, Scikit-learn, NumPy, Random Forest Regressor) for green investment scoring service, ensuring real-time metric updates with **99.9% system uptime**",
     ],
     logo: "/assets/experiences/greenportfolio_logo.png",
   },
@@ -23,9 +23,8 @@ const experiences = [
     location: "Singapore",
     description: [
       "Worked closely with a global team of **55 developers** to develop pioneer blockchain-based payment platforms",
-      "Developed decentralized application from the ground up (Java, SQL, Web3.js, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network that allows **near-instant** cross-border liquidity funding for institutional clients",
-      "Led development and live deployment of blockchain ledger (Smart Contracts, Solidity) for Partior, an inter-bank blockchain network enabling multi-currency atomic settlements across major global banks in under **2 minutes**",
-      "Built proof-of-concept (Solidity Diamond Standard) to make Partior's blockchain ledger scalable and upgradable, contributing to successful transaction of tokenized Singapore government securities on the Polygon network",
+      "Developed decentralized application from the ground up (Java, SQL, Web3.js, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network allowing **near-instant** cross-border liquidity funding for institutional clients, processing **billions in daily transactions** since launch and **reducing funding time by 99.8%** (from days to minutes)",
+      "Led development and live deployment of blockchain ledger (Smart Contracts, Solidity) for Partior, an inter-bank blockchain network supporting multi-currency atomic settlements between major global banks, cutting settlement time from several days to **under 2 minutes**",
     ],
     logo: "/assets/experiences/jpmorganchase_logo.png",
   },
@@ -46,7 +45,7 @@ const experiences = [
     duration: "May 2017 - Jul 2017",
     location: "Singapore",
     description: [
-      "Built an automation tool (Java, SpringBoot, SQL, Jenkins) to parse and analyze static security scanning results, boosting efficiency in the firm's application security assessments by over **90%** and reducing the evaluation times by **80%**",
+      "Built analytics tool (Java, SpringBoot, SQL, Jenkins) to parse static security scanning results across enterprise systems and generate dashboards, boosting application security assessment efficiency by over **90%** and reducing evaluation time by **80%**",
     ],
     logo: "/assets/experiences/jpmorganchase_logo.png",
   },
