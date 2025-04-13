@@ -16,13 +16,14 @@ import {
   SiNumpy, SiPandas, SiDocker, SiKubernetes, SiGooglecloud, SiAmazon,
   SiRedhatopenshift, SiMysql, SiSwagger, SiApachehadoop,
   SiApachekafka, SiApachespark, SiBlockchaindotcom, SiTableau, SiJirasoftware,
-  SiTailwindcss, SiPytorch, SiOpencv, SiMongodb, SiLangchain
+  SiTailwindcss, SiPytorch, SiOpencv, SiMongodb, SiLangchain, SiHuggingface
 } from "react-icons/si";
 import { BsFiletypeSql } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineRadarChart, AiFillApi, AiOutlineOpenAI } from "react-icons/ai";
 import { DiScrum, DiJira } from "react-icons/di";
 import { VscAzureDevops } from "react-icons/vsc";
+import { RiLoopRightLine } from "react-icons/ri";
 
 const about = {
   title: "About me",
@@ -45,7 +46,7 @@ const aboutTabs = [
         duration: "Sep 2023 - May 2025 (expected)",
         location: "New York, NY",
         coursework:
-          "Algorithms, Operating Systems, DevOps, Data Science, Natural Language Processing, Computer Vision, GPUs, Cloud and Machine Learning",
+          "Algorithms, Operating Systems, Data Science, Computer Vision, GPUs, Cloud and Machine Learning, DevOps",
       },
       {
         institution: "Singapore Management University",
@@ -107,7 +108,7 @@ const aboutTabs = [
         ],
       },
       {
-        category: "Machine Learning",
+        category: "AI/ML",
         skills: [
           { icon: <SiPytorch />, name: "PyTorch" },
           { icon: <SiScikitlearn />, name: "Scikit-Learn" },
@@ -116,7 +117,7 @@ const aboutTabs = [
           { icon: <AiOutlineRadarChart />, name: "Matplotlib" },
           { icon: <SiOpencv />, name: "OpenCV" },
           { icon: <SiLangchain />, name: "LangChain" },
-          { icon: <AiOutlineOpenAI />, name: "OpenAI GPT" },
+          { icon: <SiHuggingface />, name: "Hugging Face" },
         ],
       },
       {
@@ -131,7 +132,6 @@ const aboutTabs = [
       {
         category: "Dev Tools and Methodologies",
         skills: [
-          { icon: <FaGitAlt />, name: "Git" },
           { icon: <FaGithub />, name: "GitHub" },
           { icon: <SiDocker />, name: "Docker" },
           { icon: <FaJenkins />, name: "Jenkins" },
@@ -140,6 +140,7 @@ const aboutTabs = [
           { icon: <SiJirasoftware />, name: "Zenhub" },
           { icon: <DiScrum />, name: "Agile/Scrum" },
           { icon: <VscAzureDevops />, name: "DevOps" },
+          { icon: <RiLoopRightLine />, name: "CI/CD" },
         ],
       },
       {
@@ -155,7 +156,7 @@ const aboutTabs = [
           { icon: <FaEthereum />, name: "Ethereum" },
           { icon: <SiBlockchaindotcom />, name: "Quorum" },
           { icon: <SiTableau />, name: "Tableau" },
-          { icon: <SiWeb3Dotjs />, name: "Web3.js" },
+          { icon: <SiWeb3Dotjs />, name: "Web3" },
         ],
       },
     ],

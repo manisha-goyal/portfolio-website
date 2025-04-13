@@ -23,7 +23,7 @@ const experiences = [
     location: "Singapore",
     description: [
       "Worked closely with a global team of **55 developers** to develop pioneer blockchain-based payment platforms",
-      "Developed decentralized application from the ground up (Java, SQL, Web3.js, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network allowing **near-instant** cross-border liquidity funding for institutional clients, processing **billions in daily transactions** since launch, and **reducing funding time by 99.8%** (from days to minutes)",
+      "Developed decentralized application from the ground up (Java, SQL, Web3, REST APIs, Docker, Kubernetes) for JPM Coin System, a first-of-its-kind permissioned blockchain network allowing **near-instant** cross-border liquidity funding for institutional clients, processing **billions in daily transactions** since launch, and **reducing funding time by 99.8%** (from days to minutes)",
       "Led development and live deployment of blockchain ledger (Smart Contracts, Solidity) for Partior, an inter-bank blockchain network supporting multi-currency atomic settlements between major global banks, cutting settlement time from several days to **under 2 minutes**",
     ],
     logo: "/assets/experiences/jpmorganchase_logo.png",
