@@ -18,7 +18,7 @@ const projects = [
   {
     title: "ASL Interpretation",
     description:
-      "Developed a model for continuous American Sign Language (ASL) interpretation using LLaVA-NeXT-Video, fine-tuned on the How2Sign dataset with parameter-efficient techniques (LoRA and QLoRA), enhancing accessibility by translating ASL gestures into coherent English text",
+      "Developed a model for continuous American Sign Language (ASL) interpretation using LLaVA-NeXT-Video, fine-tuned on How2Sign dataset with parameter-efficient techniques (LoRA and QLoRA), enhancing accessibility by translating ASL gestures into coherent English text",
     technologies: "Python, PyTorch, LLVM, LLaVA-NeXT-Video, QLoRA",
     image: "/assets/projects/asl.png",
     github: "https://github.com/manisha-goyal/asl-interpreter",
@@ -26,7 +26,7 @@ const projects = [
   {
     title: "RAG Chatbot for Research Papers",
     description:
-      "Built Retrieval-Augmented Generation (RAG) chatbot for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost",
+      "Built and deployed RAG chatbot on cloud for querying research papers, enabling efficient retrieval and generation of context-aware insights to enhance accessibility; integrated LLM metrics tracking to optimize performance and cost and CI/CD pipeline for scalablility",
     technologies: "Python, Pinecone, LangChain, OpenAI GPT-3.5-Turbo LLM, Langtrace, Kubernetes", 
     image: "/assets/projects/chatbot.png",
     github: "https://github.com/manisha-goyal/research-paper-rag-chatbot",
