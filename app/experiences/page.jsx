@@ -11,7 +11,7 @@ const experiences = [
     duration: "Jun 2025 - Present",
     location: "New York, NY",
     description: [
-      "Building and scaling backend services (Java, PostgreSQL, BigQuery, Docker, Quarkus) to power transaction processing and loyalty features for Bilt's rewards platform, ensuring **reliability and scalability for millions of users**",
+      "Building and scaling backend services (Java, PostgreSQL, BigQuery, Docker, Quarkus) to power loyalty and rewards features for Bilt's platform, ensuring **reliability and scalability for millions of users**",
     ],
     logo: "/assets/experiences/biltrewards_logo.jpeg",
   },
