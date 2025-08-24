@@ -28,10 +28,9 @@ import { RiLoopRightLine } from "react-icons/ri";
 const about = {
   title: "About me",
   description: [
-    "I'm a software engineer with a passion for applying technology and innovation to solve complex problems and make a tangible impact. Currently, I'm pursuing a Master's in Computer Science at New York University (Courant Institute of Mathematical Sciences), where I'm delving into cutting-edge topics like Artificial Intelligence and Machine Learning.",
-    "My journey has taken me from developing decentralized applications at J.P. Morgan, including contributing to pioneering projects like the JPM Coin System, to building scalable data lakes for cybersecurity. I thrive on teamwork and innovation, always seeking to collaborate on projects that push technological boundaries and drive progress.",
-    "Most recently, at GreenPortfolio, I've been leveraging my technical expertise to develop mission-driven financial tools for sustainable investing while gaining hands-on experience in a fast-paced startup environment.",
-    "When I'm not coding, you'll find me experimenting with new recipes, practicing yoga, or binge-watching the latest TV shows and movies!"
+    "I'm a software engineer who enjoys using technology to solve problems and build things that make a difference. I recently graduated with a Master's in Computer Science from New York University and now work at Bilt Rewards, where I'm developing the systems that power its loyalty and rewards platform.",
+    "Before Bilt, I gained experience across different environments - from working at J.P. Morgan on projects such as the JPM Coin System and cybersecurity platforms, to early-stage mission-driven startups like GreenPortfolio, where I built tools to manage investments and worked on data-heavy systems. These roles taught me how to adapt quickly, work with different teams, and deliver practical solutions.",
+    "I love collaborating with others and learning from new challenges, whether it is refining an idea, improving a product, or exploring a new technology. When I'm not coding, you will find me experimenting with new recipes, practicing yoga, or binge-watching the latest TV shows and movies!"
   ],
   image: "/assets/about/photo3.png"
 };
