@@ -6,9 +6,19 @@ import Image from "next/image";
 
 const experiences = [
   {
+    company: "Bilt Rewards",
+    position: "Software Engineer",
+    duration: "Jun 2025 - Present",
+    location: "New York, NY",
+    description: [
+      "Building and scaling backend services (Java, PostgreSQL, BigQuery, Docker, Quarkus) to power transaction processing and loyalty features for Bilt's rewards platform, ensuring **reliability and scalability for millions of users**",
+    ],
+    logo: "/assets/experiences/biltrewards_logo.jpeg",
+  },
+  {
     company: "GreenPortfolio",
     position: "Software Engineer Intern",
-    duration: "Jan 2025 - Present",
+    duration: "Jan 2025 - Apr 2025",
     location: "New York, NY",
     description: [
       "Enhanced financial advisor matching service (Python, Flask, PostgreSQL, GCP) by improving client-advisor recommendation accuracy and streamlining platform workflows to make user experience more intuitive, contributing to **60% increase in user adoption**",
