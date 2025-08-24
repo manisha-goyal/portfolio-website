@@ -42,7 +42,7 @@ const aboutTabs = [
       {
         institution: "New York University",
         degree: "Courant Institute of Mathematical Sciences, Master of Science in Computer Science, Major in Artificial Intelligence",
-        duration: "Sep 2023 - May 2025 (expected)",
+        duration: "Sep 2023 - May 2025",
         location: "New York, NY",
         coursework:
           "Algorithms, Operating Systems, Data Science, Computer Vision, GPUs, Cloud and Machine Learning, DevOps",
